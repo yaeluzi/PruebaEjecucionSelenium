@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Informe de Ejecución de Prueba</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    h1 {
+      color: #333;
+    }
+    .test-case {
+      margin-top: 20px;
+      border: 1px solid #ddd;
+      padding: 10px;
+    }
+    .success {
+      color: green;
+    }
+    .failure {
+      color: red;
+    }
+  </style>
+  
+</head>
+<body>
+  <h1>Informe de Ejecución de Prueba</h1>
+  
+  <div class="test-case">
+    <h2>Caso de Prueba: Inicio de Sesión con Credenciales Válidas</h2>
+    <p>Resultado: <span class="success">Exitoso</span></p>
+    <p>Descripción: Se intentó iniciar sesión con un correo y contraseña válidos para acceder al sistema y explorar las funcionalidades disponibles. Se verificó que el usuario pueda acceder correctamente a su cuenta y visualizar su perfil.</p>
+    <p>Criterios de Aceptación:</p>
+    <ul>
+      <li>El usuario debe ser capaz de ingresar su correo y contraseña en los campos de inicio de sesión.</li>
+      <li>Al hacer clic en el botón "Iniciar Sesión", el usuario debe ser redirigido a su perfil.</li>
+      <li>En caso de éxito, el sistema deberá mostrar un mensaje de bienvenida en el perfil del usuario.</li>
+    </ul>
+  </div>
+  
+  <div class="test-case">
+    <h2>Caso de Prueba: Inicio de Sesión con Credenciales Incorrectas</h2>
+    <p>Resultado: <span class="failure">Fallido</span></p>
+    <p>Descripción: Se intentó iniciar sesión con un correo y contraseña incorrectos para evaluar el manejo de errores del sistema. Se esperaba que el sistema mostrara un mensaje de error indicando que las credenciales no son válidas.</p>
+    <p>Criterios de Aceptación:</p>
+    <ul>
+      <li>El usuario debe ser capaz de ingresar su correo y contraseña en los campos de inicio de sesión.</li>
+      <li>Al hacer clic en el botón "Iniciar Sesión", el sistema deberá mostrar un mensaje de error indicando que las credenciales son incorrectas.</li>
+    </ul>
+  </div>
+</body>
+</html>
